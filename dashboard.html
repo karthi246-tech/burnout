@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - WellBeing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌱 WellBeing</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="checkin.html">Check-In</a>
+        <a href="history.html">History</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h1>📊 My Well-Being Dashboard</h1>
+
+    <p class="welcome">
+        Welcome back, <strong id="userName">Student</strong>!
+    </p>
+
+    <div class="score-card">
+
+        <div>
+            <p>Current Burnout Risk Score</p>
+            <h2 id="burnoutScore">--</h2>
+            <span id="riskLevel" class="risk">No data</span>
+        </div>
+
+        <div class="score-circle">
+            <span id="scoreCircle">--</span>
+        </div>
+
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <span>😊</span>
+            <h3>Latest Mood</h3>
+            <p id="latestMood">--</p>
+        </div>
+
+        <div class="stat-card">
+            <span>😰</span>
+            <h3>Stress</h3>
+            <p id="latestStress">--</p>
+        </div>
+
+        <div class="stat-card">
+            <span>😴</span>
+            <h3>Sleep</h3>
+            <p id="latestSleep">--</p>
+        </div>
+
+        <div class="stat-card">
+            <span>📚</span>
+            <h3>Study Hours</h3>
+            <p id="latestStudy">--</p>
+        </div>
+
+        <div class="stat-card">
+            <span>💪</span>
+            <h3>Motivation</h3>
+            <p id="latestMotivation">--</p>
+        </div>
+
+        <div class="stat-card">
+            <span>🔥</span>
+            <h3>Current Streak</h3>
+            <p id="currentStreak">0 days</p>
+        </div>
+
+    </div>
+
+    <section class="recommendation">
+
+        <h2>💡 Personalized Recommendation</h2>
+
+        <p id="recommendation">
+            Complete your first daily check-in to receive recommendations.
+        </p>
+
+    </section>
+
+    <section class="quick-actions">
+
+        <h2>Quick Actions</h2>
+
+        <div class="hero-buttons">
+            <a href="checkin.html" class="btn">➕ Daily Check-In</a>
+            <a href="history.html" class="btn secondary">📋 View History</a>
+            <a href="analytics.html" class="btn secondary">📈 Analytics</a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>For self-monitoring purposes only — not a medical diagnosis.</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
